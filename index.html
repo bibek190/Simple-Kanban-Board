@@ -7,7 +7,31 @@
     <title>Simple Kanban board</title>
   </head>
   <body>
-    <h1>Kanban Board is on progress</h1>
-    <script src="script.js"></script>
+    <div class="board">
+      <form id="todo-form">
+        <input type="text" placeholder="New Todo.." id="todo-input" />
+        <button type="submit">Add +</button>
+      </form>
+
+      <div class="lanes">
+        <div class="swim-lane" id="todo-lane">
+          <h3 class="heading">TODO</h3>
+          <p class="task" draggable="true">Get groceries</p>
+          <p class="task" draggable="true">Cooding..</p>
+          <p class="task" draggable="true">Update Github</p>
+        </div>
+        <div class="swim-lane" id="todo-lane">
+          <h3 class="heading">DOING</h3>
+          <p class="task" draggable="true">Got my certification</p>
+        </div>
+        <div class="swim-lane" id="todo-lane">
+          <h3 class="heading">DONE</h3>
+          <p class="task" draggable="true">Worked on my resume.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+    <script src="drag.js" defer></script>
   </body>
 </html>
