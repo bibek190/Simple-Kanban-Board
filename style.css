@@ -52,11 +52,8 @@ body {
 .heading {
   font-size: 1.8rem;
   font-weight: bold;
-  margin-bottom: 2px;
 }
 .swim-lane {
-  display: flex;
-  flex-direction: column;
   background: #e2dfdf;
   padding: 0.9rem;
   border-radius: 5px;
@@ -64,7 +61,7 @@ body {
   min-height: 120px;
 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-  flex-shrink: 0;
+  margin-bottom: 10px;
 }
 .task {
   background: white;
